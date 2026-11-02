@@ -164,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 /* ENQUIRY FORM VALIDATION */
 
 const enquiryForm = document.getElementById("enquiry-form");
@@ -190,11 +191,21 @@ if (enquiryForm) {
             return;
         }
 
+        const formData = new FormData(enquiryForm);
+        const customerName = formData.get("name");
+        const product = formData.get("product");
+        const quantity = formData.get("quantity");
+        const eventDateValue = formData.get("date");
+
         responseMessage.textContent =
-            "Your details are valid! The form is ready for connection to a submission service.";
+            `Thank you, ${customerName}! Your enquiry for ${quantity} ${product.replaceAll("-", " ")} item(s), needed for ${eventDateValue}, has been checked. Please email info@sweetcrumbsbakery.co.za to confirm availability and pricing. Your enquiry has not been sent automatically.`;
 
         responseMessage.style.color = "green";
+        responseMessage.setAttribute("tabindex", "-1");
+        responseMessage.focus();
     });
+}
+
 }
 
 /* CONTACT FORM */
