@@ -171,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
 
     const enquiryForm = document.getElementById("enquiry-form");
+    console.log("Enquiry script is running", enquiryForm);
 
     if (!enquiryForm) {
         return;
