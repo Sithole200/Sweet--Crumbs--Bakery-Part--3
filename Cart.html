@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Sweet Crumbs Bakery</title>
+    <meta name="description" content="Review your Sweet Crumbs Bakery order, update quantities and continue to checkout.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <h1>Sweet Crumbs Bakery</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html" class="active">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="cart-page">
+    <section class="cart-intro">
+        <h2>Your Shopping Cart</h2>
+        <p>Review your selected Sweet Crumbs Bakery products before checkout.</p>
+    </section>
+
+    <section class="shopping-cart">
+        <div class="cart-table">
+            <div class="cart-header">
+                <span>Product</span>
+                <span>Quantity</span>
+                <span>Price</span>
+                <span>Action</span>
+            </div>
+
+            <div id="cart-items">
+                <p>Your cart is currently empty.</p>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">R0.00</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery</span>
+                <span id="cart-delivery">R0.00</span>
+            </div>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <span id="cart-total">R0.00</span>
+            </div>
+            
+            <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Sweet Crumbs Bakery. All rights reserved.</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

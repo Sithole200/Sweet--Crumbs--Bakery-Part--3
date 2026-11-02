@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sweet Crumbs Bakery</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html" class="active">Checkout</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="checkout-page">
+
+    <section class="checkout-intro">
+        <h2>Checkout</h2>
+        <p>
+            You are almost there! Please provide your details below
+            to complete your Sweet Crumbs Bakery order.
+        </p>
+    </section>
+
+    <section class="checkout-container">
+
+        <div class="checkout-form">
+            <h2>Customer Information</h2>
+
+            <form id="checkout-form">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname"
+                       placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email address" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number" required>
+
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" rows="4"
+                          placeholder="Enter your delivery address" required></textarea>
+
+                <label for="delivery">Delivery Method</label>
+                <select id="delivery" name="delivery">
+                    <option value="Collection">Collection</option>
+                    <option value="Local Delivery">Local Delivery</option>
+                </select>
+
+                <label for="notes">Order Notes</label>
+                <textarea id="notes" name="notes" rows="4"
+                          placeholder="Any special instructions for your order?"></textarea>
+            </form>
+        </div>
+
+        <div class="checkout-summary">
+            <h2>Order Summary</h2>
+
+            <div id="checkout-items"></div>
+
+            <div class="checkout-line"></div>
+
+            <div class="checkout-item">
+                <span>Subtotal</span>
+                <span id="checkout-subtotal">R0.00</span>
+            </div>
+
+            <div class="checkout-item">
+                <span>Delivery</span>
+                <span id="checkout-delivery">R0.00</span>
+            </div>
+
+            <div class="checkout-total">
+                <span>Total</span>
+                <span id="checkout-total">R0.00</span>
+            </div>
+
+            <button type="submit" form="checkout-form"
+                    class="place-order-button">
+                Place Order
+            </button>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Sweet Crumbs Bakery. All rights reserved.</p>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Contact Sweet Crumbs Bakery | Johannesburg and Pretoria</title>
+    <meta name="description" content="Contact Sweet Crumbs Bakery for cake orders, product enquiries and bakery information. Find our Johannesburg and Pretoria branches, contact details and opening hours.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header>
+    <h1>Sweet Crumbs Bakery</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<main class="contact-page">
+
+    <!-- CONTACT INTRODUCTION -->
+
+    <section class="contact-intro">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            We would love to hear from you. Contact Sweet Crumbs Bakery
+            for enquiries, orders or more information about our products.
+        </p>
+
+    </section>
+
+    <!-- OUR LOCATIONS -->
+
+    <section class="locations-section">
+
+        <h2>Our Locations</h2>
+
+        <!-- JOHANNESBURG -->
+
+        <div class="location-card">
+
+            <h3>Johannesburg Branch</h3>
+
+            <p>
+                <strong>Address:</strong>
+                25 Main Street, Johannesburg, Gauteng
+            </p>
+
+            <p>
+                <strong>Phone:</strong> 011 123 4567
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:info@sweetcrumbsbakery.co.za">
+                    info@sweetcrumbsbakery.co.za
+                </a>
+            </p>
+
+            <p>
+                <strong>Opening Hours:</strong>
+                Monday - Saturday, 08:00 - 17:00
+            </p>
+
+            <!-- ORIGINAL JOHANNESBURG MAP -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.75890678205!2d27.957622159533393!3d-26.171498044312184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1786662696428!5m2!1sen!2sza"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+        <!-- PRETORIA -->
+
+        <div class="location-card">
+
+            <h3>Pretoria Branch</h3>
+
+            <p>
+                <strong>Address:</strong>
+                10 Church Street, Pretoria, Gauteng
+            </p>
+
+            <p>
+                <strong>Phone:</strong> 012 123 4567
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:info@sweetcrumbsbakery.co.za">
+                    info@sweetcrumbsbakery.co.za
+                </a>
+            </p>
+
+            <p>
+                <strong>Opening Hours:</strong>
+                Monday - Saturday, 08:00 - 17:00
+            </p>
+
+            <!-- ORIGINAL PRETORIA MAP -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229975.25874952413!2d28.033135737260913!3d-25.758557169164412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95619cbec65033%3A0xf66262b07a847b4c!2sPretoria!5e0!3m2!1sen!2sza!4v1786663184539!5m2!1sen!2sza"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- FIND US -->
+
+    <section class="find-us">
+
+        <h2>Find Us</h2>
+
+        <p>
+            Visit us at either of our convenient bakery locations.
+            Our friendly team is ready to assist you with your
+            orders and enquiries.
+        </p>
+
+        <div class="find-us-cards">
+
+            <div>
+                <h3>Johannesburg Branch</h3>
+                <p>
+                    Our Johannesburg branch is located in
+                    Johannesburg, Gauteng.
+                </p>
+            </div>
+
+            <div>
+                <h3>Pretoria Branch</h3>
+                <p>
+                    Our Pretoria branch is located in
+                    Pretoria, Gauteng.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MESSAGE FORM -->
+
+    <section class="contact-form-section">
+
+        <h2>Send Us a Message</h2>
+
+        <p>
+            Have a question or need more information?
+            Send us a message and we will be happy to assist you.
+        </p>
+
+        <form id="contact-form" action="#" method="post">
+
+            <label for="contact-name">Full Name:</label>
+
+            <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Your name"
+                minlength="2"
+                maxlength="100"
+                required
+            >
+
+            <label for="contact-email">Email Address:</label>
+
+            <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="your@email.com"
+                required
+            >
+
+            <label for="contact-type">Message Type:</label>
+
+            <select id="contact-type" name="messageType" required>
+                <option value="">Select a message type</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Product Enquiry">Product Enquiry</option>
+                <option value="Order Enquiry">Order Enquiry</option>
+                <option value="Complaint or Feedback">Complaint or Feedback</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="contact-message">Message:</label>
+
+            <textarea
+                id="contact-message"
+                name="message"
+                rows="6"
+                minlength="10"
+                maxlength="2000"
+                placeholder="Type your message here..."
+                required
+            ></textarea>
+
+            <input type="submit" value="Send Message">
+
+            <p id="contact-response" role="status" aria-live="polite"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Sweet Crumbs Bakery. All rights reserved.</p>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

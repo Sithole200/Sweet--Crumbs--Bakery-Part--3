@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Bakery Products | Sweet Crumbs Bakery</title>
+    <meta name="description" content="Explore birthday cakes, wedding cakes, cupcakes and freshly baked pastries at Sweet Crumbs Bakery. Discover treats for everyday enjoyment and special occasions.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sweet Crumbs Bakery</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="products-page">
+
+    <!-- PRODUCTS INTRODUCTION -->
+    <section class="products-intro">
+
+        <h2>Our Products</h2>
+
+        <p>
+            At Sweet Crumbs Bakery, we offer a variety of freshly baked treats
+            made with care for everyday enjoyment and special occasions.
+            Explore our delicious selection below.
+        </p>
+
+    </section>
+
+    <!-- PRODUCT SEARCH, FILTER AND SORTING -->
+    <section class="product-controls">
+
+        <h2>Find Your Treat</h2>
+
+        <label for="product-search">Search products:</label>
+        <input
+            type="search"
+            id="product-search"
+            placeholder="e.g. chocolate, cake..."
+        >
+
+        <label for="category-filter">Choose a category:</label>
+        <select id="category-filter">
+            <option value="all">All Products</option>
+            <option value="cakes">Cakes</option>
+            <option value="cupcakes">Cupcakes</option>
+            <option value="pastries">Pastries</option>
+            <option value="seasonal specials">Seasonal Specials</option>
+        </select>
+
+        <label for="price-sort">Sort products by price:</label>
+        <select id="price-sort">
+            <option value="default">Default order</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+
+    </section>
+
+    <!-- CAKES -->
+    <section class="product-category">
+
+        <h2>Cakes</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card" data-category="cakes">
+                <img src="images/Birthday Cake.jpg.jpg" alt="Birthday cake from Sweet Crumbs Bakery">
+                <h3>Birthday Cake</h3>
+                <p>A beautifully decorated cake perfect for making birthdays extra special.</p>
+                <span class="price">R450</span>
+                <button type="button" class="add-to-cart"
+                data-name="Birthday Cake" data-price="450">
+                Add to Cart
+           </button>
+            </div>
+
+            <div class="product-card" data-category="cakes">
+                <img src="images/Wedding Cake.jpg.jpg" alt="Wedding cake from Sweet Crumbs Bakery">
+                <h3>Wedding Cake</h3>
+                <p>An elegant celebration cake designed for beautiful wedding occasions.</p>
+                <span class="price">From R1,200</span>
+               <button type="button" class="add-to-cart"
+               data-name="Wedding Cake" data-price="1200">
+               Add to Cart
+        </button> 
+            </div>
+
+            <div class="product-card" data-category="cakes">
+                <img src="images/Custom Cake.jpg.jpg" alt="Custom-designed cake made by Sweet Crumbs Bakery">
+                <h3>Custom Cake</h3>
+                <p>A personalised cake created according to your preferred design and occasion.</p>
+                <span class="price">From R500</span>
+                <button type="button" class="add-to-cart"
+                 data-name="Custom Cake" data-price="500">
+                 Add to Cart
+            </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CUPCAKES -->
+    <section class="product-category">
+
+        <h2>Cupcakes</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card" data-category="cupcakes">
+                <img src="images/Vanilla Cupcakes.jpg.jpg" alt="Vanilla cupcakes from Sweet Crumbs Bakery">
+                <h3>Vanilla Cupcakes</h3>
+                <p>Soft and delicious vanilla cupcakes with a sweet, creamy topping.</p>
+                <span class="price">R25 each</span>
+                <button type="button" class="add-to-cart"
+                 data-name="Vanilla Cupcakes" data-price="25">
+                 Add to Cart
+              </button>
+            </div>
+
+            <div class="product-card" data-category="cupcakes">
+                <img src="images/Chocolate Cupcakes.jpj.jpg" alt="Chocolate cupcakes from Sweet Crumbs Bakery">
+                <h3>Chocolate Cupcakes</h3>
+                <p>Rich chocolate cupcakes made for chocolate lovers.</p>
+                <span class="price">R25 each</span>
+                <button type="button" class="add-to-cart"
+                data-name="Chocolate Cupcakes" data-price="25">
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="product-card" data-category="cupcakes">
+                <img src="images/Red Velvet Cupcakes.jpg.jpg" alt="Red velvet cupcakes from Sweet Crumbs Bakery">
+                <h3>Red Velvet Cupcakes</h3>
+                <p>Moist red velvet cupcakes finished with a smooth and creamy topping.</p>
+                <span class="price">R30 each</span>
+                <button type="button" class="add-to-cart"
+                 data-name="Red Velvet Cupcakes" data-price="30">
+                 Add to Cart
+             </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PASTRIES -->
+    <section class="product-category">
+
+        <h2>Pastries</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card" data-category="pastries">
+                <img src="images/Croissants.jpg.jpg" alt="Fresh croissants">
+                <h3>Croissants</h3>
+                <p>Freshly baked golden croissants with a light and flaky texture.</p>
+                <span class="price">R25 each</span>
+                <button type="button" class="add-to-cart"
+                data-name="Croissants" data-price="25">
+                Add to Cart
+            </button>
+            </div>
+
+            <div class="product-card" data-category="pastries">
+                <img src="images/Danish Pastries.jpg.jpg" alt="Danish pastries">
+                <h3>Danish Pastries</h3>
+                <p>Sweet and delicious pastries perfect for breakfast or an afternoon treat.</p>
+                <span class="price">R30 each</span>
+               <button type="button" class="add-to-cart"
+                data-name="Danish Pastries" data-price="30">
+                Add to Cart
+             </button> 
+            </div>
+
+            <div class="product-card" data-category="pastries">
+                <img src="images/Chocolate Pastries.jpg.jpg" alt="Chocolate pastries">
+                <h3>Chocolate Pastries</h3>
+                <p>Flaky pastries filled with delicious chocolate for the perfect sweet treat.</p>
+                <span class="price">R30 each</span>
+                <button type="button" class="add-to-cart"
+                data-name="Chocolate Pastries" data-price="30">
+                Add to Cart
+           </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SEASONAL SPECIALS -->
+    <section class="product-category">
+
+        <h2>Seasonal Specials</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card" data-category="seasonal specials">
+                <img src="images/Seasonal Special.jpg.jpg" alt="Seasonal bakery special">
+                <h3>Seasonal Special</h3>
+                <p>A special baked treat inspired by the season and available for a limited time.</p>
+                <span class="price">From R35</span>
+                <button type="button" class="add-to-cart"
+                 data-name="Seasonal Special" data-price="35">
+                 Add to Cart
+            </button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- IMAGE LIGHTBOX -->
+<div id="image-lightbox" class="image-lightbox" hidden>
+    <button type="button" id="close-lightbox" class="close-lightbox" aria-label="Close enlarged image">&times;</button>
+    <img id="lightbox-image" src="" alt="">
+    <p id="lightbox-caption"></p>
+</div>
+
+
+<footer>
+    <p>&copy; 2026 Sweet Crumbs Bakery. All rights reserved.</p>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
